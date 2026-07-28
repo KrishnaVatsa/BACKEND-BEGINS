@@ -1,4 +1,5 @@
-import express from 'express';
+//import express from 'express';
+const express = require("express");
 
 const app = express();
 
@@ -6,7 +7,7 @@ const app = express();
 //     res.send('Server is ready');
 // });
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => {
    const jokes = [
     {
         id: 1,
@@ -59,11 +60,12 @@ app.get('/jokes', (req, res) => {
         content: "I love deadlines. I especially love the whooshing sound they make as they fly by."
     }
 ];
+res.json(jokes);
 });
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-    console.log('Serve at http:localhost:#{port}');
+    console.log(`Server running at http://localhost:${port}`);
     }
 );

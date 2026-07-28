@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 function App() {
   const [jokes, setJokes] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:3000/jokes')
+    axios.get('http://localhost:3000/api/jokes')
     .then((response) => {
       setJokes (response.data)
     }
