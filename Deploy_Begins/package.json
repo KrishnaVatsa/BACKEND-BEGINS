@@ -1,0 +1,19 @@
+{
+  "name": "deploy_begins",
+  "version": "1.0.0",
+  "description": "a basic app to deploy",
+  "keywords": [
+    "node"
+  ],
+  "license": "ISC",
+  "author": "Krishna Singh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
